@@ -1,1 +1,0 @@
-gswin64c.exe -q -dNOPAUSE -r600 -sDEVICE=tiff24nc -sOutputFile=c:\Users\nozery\Documents\Projects\FormTemplate\test.tif c:\Users\nozery\Documents\Projects\FormTemplate\test.pdf -c quit
