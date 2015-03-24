@@ -11,11 +11,15 @@ int main()
 
 	parser = ImageParser();
 	result = parser.Init("heb");
-	result = parser.ReadImage("../test.tif");
+	result = parser.ReadImage("../testData/elec1.tif");
 	result = parser.CreateHOCR();
-	parser.TextToFile("../outputFile.xml");
-	
-
+	parser.TextToFile("../testData/electric_temp.xml");
+	result = parser.ReadImage("../testData/HM1.tif");
+	result = parser.CreateHOCR();
+	parser.TextToFile("../testData/hotmobile_temp.xml");
+	result = parser.ReadImage("../testData/mun1.tif");
+	result = parser.CreateHOCR();
+	parser.TextToFile("../testData/municipality_temp.xml");
 
     return 0;
 }
