@@ -56,7 +56,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>ImageParser.lib;liblept168.lib;libtesseract302.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(projectDir)../../tesseract/lib;$(projectDir)../../leptonica/lib;../../CRP/Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\3rdParty\tesseract\lib;$(SolutionDir)..\3rdParty\leptonica\lib;..\..\CRP\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
