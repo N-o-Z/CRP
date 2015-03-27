@@ -1,3 +1,3 @@
-#include <tesseract/include/tesseract/baseapi.h>
-#include <tesseract/include/tesseract/strngs.h>
-#include <leptonica/include/leptonica/allheaders.h>
+#include <3rdParty/tesseract/include/tesseract/baseapi.h>
+#include <3rdParty/tesseract/include/tesseract/strngs.h>
+#include <3rdParty/leptonica/include/leptonica/allheaders.h>

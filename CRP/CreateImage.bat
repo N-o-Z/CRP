@@ -8,7 +8,7 @@ IF %1==-d (
 	chdir "./%2"
 	for %%i in (*.pdf) do (
 		echo %%~ni
-		"C:\Program Files\gs\gs9.15\bin\gswin64c.exe" -q -dNOPAUSE -r1200 -sCompression=pack -sDEVICE=tiffgray -sOutputFile=%%~ni.tif %%i -c quit
+		"C:\Program Files\gs\gs9.15\bin\gswin64c.exe" -q -dNOPAUSE -r120 -sCompression=pack -sDEVICE=tiffgray -sOutputFile=%%~ni.tif %%i -c quit
 	)
 
 	popd
