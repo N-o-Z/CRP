@@ -19,7 +19,7 @@ namespace CRP
 	{
 	private:
 		string _data;
-		BBOX_COORDINATES coordinates;
+		BBOX_COORDINATES _coordinates;
 
 	public:
 		WordBox(string data, int x_1, int y_1, int x_2, int y_2);
@@ -32,7 +32,7 @@ namespace CRP
 	{
 	private:
 		vector<WordBox*> _words;
-		BBOX_COORDINATES coordinates;
+		BBOX_COORDINATES _coordinates;
 		int _lineNumber;
 	public:
 		LineBox(int LineNumber, int x_1, int y_1, int x_2, int y_2);
@@ -47,12 +47,12 @@ namespace CRP
 	{
 	private:
 		vector<LineBox*> _lines;
-		BBOX_COORDINATES coordinates;
+		BBOX_COORDINATES _coordinates;
 
 	public:
 		ParagraphBox(int x_1, int y_1, int x_2, int y_2);
 		const BBOX_COORDINATES& GetCoordinates();
-		void addLine(LineBox* line);
+		void AddLine(LineBox* line);
 		bool GetLine(int lineNumber, const LineBox* line);
 		string GetParagraphAsStr();
 	};
@@ -62,9 +62,9 @@ namespace CRP
 	private:
 		typedef struct _BBOX_TEMP_LINE_INFO
 		{
-			BBOX_COORDINATES coordinates ;
-			int lineNum;
-			char description[MAX_DESC] ;
+			BBOX_COORDINATES _coordinates ;
+			int _lineNum;
+			char _description[MAX_DESC] ;
 		}BBOX_TEMP_LINE_INFO;
 
 		int _threshold ; 

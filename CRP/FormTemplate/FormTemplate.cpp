@@ -2,11 +2,14 @@
 //
 
 #include "stdafx.h"
-#include <CRP\ImageParser\ImageParser.h>
+#include <ImageParser\ImageParser.h>
+
+using namespace CRP;
 
 int main()
 {
     int result = -1;
+
 	ImageParser parser;
 
 	parser = ImageParser();
@@ -20,6 +23,7 @@ int main()
 	result = parser.ReadImage("../testData/mun1.tif");
 	result = parser.CreateHOCR();
 	parser.TextToFile("../testData/municipality_temp.xml");
+
 
     return 0;
 }
